@@ -50,12 +50,35 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+//variables
+@testBorder: 1px solid red;
+
+//mixins
+
+nav {
+	display:flex;
 }
 
+.links {
+	width: 70%;
+}
+
+.logo {
+	width: 30%;
+}
+
+
+body {
+	width: 80%;
+	margin: 0% auto;
+	border: @testBorder;	
+}//closes body tag
+
+nav div a {
+	border: @testBorder;
+}//closes nav tag
 
 

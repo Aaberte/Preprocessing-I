@@ -57,11 +57,16 @@ table {
 @testBorder: 1px solid red;
 @mainColor: darkblue;
 @altColor: lightblue;
+@fontSizeH3: 2rem;
 
 //mixins
 .centerFlex {
 	display:flex;
 	align-items: center;
+}
+.h3Font {
+	font-size: 2rem;
+	color: @mainColor;
 }
 
 //codes starts here
@@ -106,7 +111,7 @@ header {
 		padding-top: 3%;	
 	}//closes  header h1 tag
 	h3 {		
-		font-size: 2rem;
+		.h3Font;
 		height: 10rem;
 		padding-top: 3%;
 		margin: auto;
@@ -119,6 +124,23 @@ header {
 		text-align: center;
 	}//closes header p tag
 }//closes header tag
+
+.about {
+	border: 1px solid black;
+	.centerFlex();
+	height: 20rem;
+	.aboutIntro {
+		border: 1px solid black;
+		width: 49%
+	}//closes aboutIntro tag
+	.aboutSkills {
+		border:1px solid black;
+		.centerFlex();
+		flex-direction: column;
+		width: 49%;
+	}//closes aboutSkills tag	
+}//closes about section tag
+
 
 
 

@@ -137,7 +137,6 @@ table {
 body {
   width: 80%;
   margin: 0% auto;
-  border: 1px solid red;
 }
 nav {
   display: flex;
@@ -145,14 +144,23 @@ nav {
   height: 5vh;
 }
 nav .logo {
-  width: 30%;
-  border: 1px solid red;
+  width: 10%;
+  height: 100%;
   text-align: center;
+  padding-top: 1%;
+  color: darkblue;
 }
 nav .links {
-  width: 70%;
-  border: 1px solid red;
+  width: 90%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+nav .links a {
+  text-decoration: none;
+  color: darkblue;
+}
+header {
+  border: 2px solid black;
 }

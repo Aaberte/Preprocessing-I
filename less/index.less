@@ -64,15 +64,12 @@ table {
 	align-items: center;
 }
 
-
-
-
 //codes starts here
 
 body {
 	width: 80%;
 	margin: 0% auto;
-	border: @testBorder;
+	
 }//closes body tag
 
 nav {
@@ -80,19 +77,29 @@ nav {
 	height: 5vh;	
 
 	.logo {
-		width: 30%;
-		border: @testBorder;
-		text-align: center;
+		width: 10%;
+		height: 100%;
+		text-align:center;	
+		padding-top: 1%;
+		color: @mainColor;
 	}//closese nav logo tag
 
 	.links {
-		width: 70%;
-		border: @testBorder;
+		width: 90%;
+		height: 100%;
 		.centerFlex();
 		justify-content: space-evenly;
+
+		a {
+			text-decoration: none;
+			color: @mainColor;
+		}//closes nav anchor tag
 	}//closes nav links tag	
 }//closes nav tag	
 
+header {
+	border: 2px solid black;
+}
 
 
 

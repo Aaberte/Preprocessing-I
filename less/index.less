@@ -56,7 +56,7 @@ table {
 //variables
 @testBorder: 1px solid red;
 @mainColor: darkblue;
-@altColor: dodgerblue;
+@altColor: lightblue;
 
 //mixins
 .centerFlex {
@@ -68,14 +68,12 @@ table {
 
 body {
 	width: 80%;
-	margin: 0% auto;
-	
+	margin: 0% auto;	
 }//closes body tag
 
 nav {
 	.centerFlex();
 	height: 5vh;	
-
 	.logo {
 		width: 10%;
 		height: 100%;
@@ -83,13 +81,11 @@ nav {
 		padding-top: 1%;
 		color: @mainColor;
 	}//closese nav logo tag
-
 	.links {
 		width: 90%;
 		height: 100%;
 		.centerFlex();
 		justify-content: space-evenly;
-
 		a {
 			text-decoration: none;
 			color: @mainColor;
@@ -98,8 +94,31 @@ nav {
 }//closes nav tag	
 
 header {
-	border: 2px solid black;
-}
+	
+	background-color: @altColor;
+	height: 40rem;
+	.centerFlex();
+	flex-direction: column;	
+	h1 {		
+		font-size: 4rem;
+		height: 10rem;
+		text-align: center;		
+		padding-top: 3%;	
+	}//closes  header h1 tag
+	h3 {		
+		font-size: 2rem;
+		height: 10rem;
+		padding-top: 3%;
+		margin: auto;
+		text-align: center;
+	}//closes header h3 tag
+	p {		
+		font-size: 1.3rem;
+		height: 10rem;
+		padding-top: 3%;
+		text-align: center;
+	}//closes header p tag
+}//closes header tag
 
 
 

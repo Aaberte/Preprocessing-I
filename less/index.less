@@ -55,8 +55,14 @@ table {
 
 //variables
 @testBorder: 1px solid red;
+@mainColor: darkblue;
+@altColor: dodgerblue;
 
 //mixins
+.centerFlex {
+	display:flex;
+	align-items: center;
+}
 
 
 
@@ -67,24 +73,26 @@ body {
 	width: 80%;
 	margin: 0% auto;
 	border: @testBorder;
-	nav {
-		display:flex;
-		height: 5vh;
-		align-items: center;
-		.logo {
-			width: 30%;
-			border: @testBorder;
-			text-align: center;
-		}//closese nav logo tag
-		.links {
-			width: 70%;
-			border: @testBorder;
-			text-align: center;
-			display:flex;
-			justify-content: space-evenly;
-		}//closes nav links tag
-	}//closes nav tag	
 }//closes body tag
+
+nav {
+	.centerFlex();
+	height: 5vh;	
+
+	.logo {
+		width: 30%;
+		border: @testBorder;
+		text-align: center;
+	}//closese nav logo tag
+
+	.links {
+		width: 70%;
+		border: @testBorder;
+		.centerFlex();
+		justify-content: space-evenly;
+	}//closes nav links tag	
+}//closes nav tag	
+
 
 
 

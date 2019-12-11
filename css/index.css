@@ -130,25 +130,29 @@ table {
 * {
   box-sizing: border-box;
 }
+.centerFlex {
+  display: flex;
+  align-items: center;
+}
 body {
   width: 80%;
   margin: 0% auto;
   border: 1px solid red;
 }
-body nav {
+nav {
   display: flex;
-  height: 5vh;
   align-items: center;
+  height: 5vh;
 }
-body nav .logo {
+nav .logo {
   width: 30%;
   border: 1px solid red;
   text-align: center;
 }
-body nav .links {
+nav .links {
   width: 70%;
   border: 1px solid red;
-  text-align: center;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }

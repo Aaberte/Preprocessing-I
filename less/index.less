@@ -58,27 +58,33 @@ table {
 
 //mixins
 
-nav {
-	display:flex;
-}
 
-.links {
-	width: 70%;
-}
 
-.logo {
-	width: 30%;
-}
 
+//codes starts here
 
 body {
 	width: 80%;
 	margin: 0% auto;
-	border: @testBorder;	
+	border: @testBorder;
+	nav {
+		display:flex;
+		height: 5vh;
+		align-items: center;
+		.logo {
+			width: 30%;
+			border: @testBorder;
+			text-align: center;
+		}//closese nav logo tag
+		.links {
+			width: 70%;
+			border: @testBorder;
+			text-align: center;
+			display:flex;
+			justify-content: space-evenly;
+		}//closes nav links tag
+	}//closes nav tag	
 }//closes body tag
 
-nav div a {
-	border: @testBorder;
-}//closes nav tag
 
 

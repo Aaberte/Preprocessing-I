@@ -130,20 +130,25 @@ table {
 * {
   box-sizing: border-box;
 }
-nav {
-  display: flex;
-}
-.links {
-  width: 70%;
-}
-.logo {
-  width: 30%;
-}
 body {
   width: 80%;
   margin: 0% auto;
   border: 1px solid red;
 }
-nav div a {
+body nav {
+  display: flex;
+  height: 5vh;
+  align-items: center;
+}
+body nav .logo {
+  width: 30%;
   border: 1px solid red;
+  text-align: center;
+}
+body nav .links {
+  width: 70%;
+  border: 1px solid red;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }

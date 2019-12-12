@@ -53,19 +53,26 @@ table {
 	box-sizing: border-box;
 }
 //variables
-@testBorder: 1px solid red;
+
 @mainColor: darkblue;
 @altColor: lightblue;
-@fontSizeH3: 2rem;
+
 
 //mixins
 .centerFlex {
 	display:flex;
 	align-items: center;
 }
-.h3Font {
+.h3About {
+	text-align: center;
 	font-size: 3rem;
+	padding-top: 4%;
 	color: @mainColor;
+}
+.pStyle {
+	text-align:center;
+	padding: 4%;
+	font-size: 1.5rem;
 }
 //codes starts here
 body {
@@ -106,7 +113,7 @@ header {
 		padding-top: 3%;	
 	}//closes  header h1 tag
 	h3 {		
-		.h3Font;
+		font-size: 3rem;
 		height: 10rem;
 		padding-top: 3%;
 		margin: auto;
@@ -121,39 +128,39 @@ header {
 }//closes header tag
 
 .about {
-	border: 1px solid black;
+	border: 10px dotted @altColor;
 	.centerFlex();
 	justify-content: space-between;
 	height: 20rem;
 	.aboutIntro {
-		border: 1px solid black;
 		height: 20rem;
 		width: 49%;
 		height: 20rem;
 		h3 {
-			border: 1px solid black;
+			.h3About();
 			height: 5rem;
 		}//closes intro h3 tag
 		p {
-			border: 1px solid black;
 			color: @mainColor;
 			height: 15rem;
+			.pStyle();
 		}//closes intro h3 tag
 	}//closes aboutIntro tag
 	.aboutSkills {
-		border:1px solid black;
 		.centerFlex();
 		flex-direction: column;
 		width: 49%;
 		height: 20rem;
 		h3 {
-			border: 1px solid black;
+			.h3About();
 			height: 5rem;
 			width:100%;		
 		}//closes skills h3 tag
 		p {
-			border: 1px solid black;
-			color: @mainColor;
+			color:@mainColor;
+			width:100%;
+			height: 18%;
+			.pStyle();
 		}//closes skills p tag
 	}//closes aboutSkills tag	
 }//closes about section tag

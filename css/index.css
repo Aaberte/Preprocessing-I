@@ -135,12 +135,13 @@ table {
   align-items: center;
 }
 .h3Font {
-  font-size: 2rem;
+  font-size: 3rem;
   color: darkblue;
 }
 body {
   width: 80%;
   margin: 0% auto;
+  font-size: 62.5%;
 }
 nav {
   display: flex;
@@ -179,7 +180,7 @@ header h1 {
   padding-top: 3%;
 }
 header h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: darkblue;
   height: 10rem;
   padding-top: 3%;
@@ -196,11 +197,22 @@ header p {
   border: 1px solid black;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 20rem;
 }
 .about .aboutIntro {
   border: 1px solid black;
   width: 49%;
+  height: 20rem;
+}
+.about .aboutIntro h3 {
+  border: 1px solid black;
+  height: 5rem;
+}
+.about .aboutIntro p {
+  border: 1px solid black;
+  color: darkblue;
+  height: 15rem;
 }
 .about .aboutSkills {
   border: 1px solid black;
@@ -208,4 +220,14 @@ header p {
   align-items: center;
   flex-direction: column;
   width: 49%;
+  height: 20rem;
+}
+.about .aboutSkills h3 {
+  border: 1px solid black;
+  height: 5rem;
+  width: 100%;
+}
+.about .aboutSkills p {
+  border: 1px solid black;
+  color: darkblue;
 }

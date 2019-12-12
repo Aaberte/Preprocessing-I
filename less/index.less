@@ -55,7 +55,8 @@ table {
 //variables
 
 @mainColor: darkblue;
-@altColor: lightblue;
+@altColor: skyblue;
+@altTextColor: white;
 
 
 //mixins
@@ -110,7 +111,8 @@ header {
 		font-size: 4rem;
 		height: 10rem;
 		text-align: center;		
-		padding-top: 3%;	
+		padding-top: 3%;
+		color: @altTextColor;	
 	}//closes  header h1 tag
 	h3 {		
 		font-size: 3rem;
@@ -118,16 +120,17 @@ header {
 		padding-top: 3%;
 		margin: auto;
 		text-align: center;
+		color: @altTextColor;
 	}//closes header h3 tag
 	p {		
 		font-size: 1.3rem;
 		height: 10rem;
 		padding-top: 3%;
 		text-align: center;
+		color: @altTextColor;
 	}//closes header p tag
 }//closes header tag
-
-.about {
+ .about {
 	border: 10px dotted @altColor;
 	.centerFlex();
 	justify-content: space-between;
@@ -163,6 +166,31 @@ header {
 			.pStyle();
 		}//closes skills p tag
 	}//closes aboutSkills tag	
-}//closes about section tag
+}//closes about section tag 
+.workHistory {
+	height: 40vh;
+	.workHistoryTable  {
+		width:100%;
+		height: 100%;
+		.mainColor {
+			color: @mainColor;
+		}//closes main color tag
+		.blue {
+			background-color: @altColor;
+			color: @altTextColor;
+	}//closes workHistoryTable tag
+		}//closes blue tag			
+}//closes workHistory tag
 
-
+.col1 {
+	width: 10%;
+	text-align: center;
+	font-size: 1.5rem;
+	padding-top: 2%;
+}//closes col1 tag	
+.col2, .col3 {
+	width: 48%;
+	text-align: center;
+	font-size: 1.3rem;
+	padding-top: 2%;
+}//closes col2 and col3 tag

@@ -174,7 +174,7 @@ nav .links a {
   color: darkblue;
 }
 header {
-  background-color: lightblue;
+  background-color: skyblue;
   height: 40rem;
   display: flex;
   align-items: center;
@@ -185,6 +185,7 @@ header h1 {
   height: 10rem;
   text-align: center;
   padding-top: 3%;
+  color: white;
 }
 header h3 {
   font-size: 3rem;
@@ -192,15 +193,17 @@ header h3 {
   padding-top: 3%;
   margin: auto;
   text-align: center;
+  color: white;
 }
 header p {
   font-size: 1.3rem;
   height: 10rem;
   padding-top: 3%;
   text-align: center;
+  color: white;
 }
 .about {
-  border: 10px dotted lightblue;
+  border: 10px dotted skyblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -246,4 +249,31 @@ header p {
   text-align: center;
   padding: 4%;
   font-size: 1.5rem;
+}
+.workHistory {
+  height: 40vh;
+}
+.workHistory .workHistoryTable {
+  width: 100%;
+  height: 100%;
+}
+.workHistory .workHistoryTable .mainColor {
+  color: darkblue;
+}
+.workHistory .workHistoryTable .blue {
+  background-color: skyblue;
+  color: white;
+}
+.col1 {
+  width: 10%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 2%;
+}
+.col2,
+.col3 {
+  width: 48%;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 2%;
 }

@@ -295,3 +295,10 @@ header p {
   font-size: 1.3rem;
   padding-top: 2%;
 }
+.contactInfo {
+  border: 1px solid black;
+  background-color: skyblue;
+  height: 10vh;
+  text-align: center;
+  padding-top: 4%;
+}

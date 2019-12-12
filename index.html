@@ -3,6 +3,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--This is the link to my font awesome-->
+  <script src="https://kit.fontawesome.com/5bd579bc86.js" crossorigin="anonymous"></script>
 
   <title>My Resume</title>
 
@@ -14,6 +17,81 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <nav>
+    <div class="links">
+      <a href ="#links">Home</a>
+      <a href ="#about">About</a>
+      <a href="#workHistory">Work History</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="logo">
+      <i class="fas fa-dragon"></i>
+    </div>
+  </nav>
+
+  <header>
+      <h1>Aaron Bertelsen - Web Developer</h1>
+      <h3>Modern web development</h3>
+      <p>Hit that contact button below and let me know how you like my site and what projects you need help with!</p>
+  </header> 
+
+  <section class="about">
+    <div class="aboutIntro">
+      <h3>About Me!</h3>
+      <p>Shortly after receiving an honorable dischrage from the United States Marine Corps, I began my career in health
+        information managment, and healthcare consulting.   
+      </p>
+    </div>
+    <div class="aboutSkills">
+      <h3>Skills:</h3>
+      <p>Heathcare Applications</p>
+      <p>Healthcare Consulting</p>
+      <p>Software Integration Sales</p>
+      <p>HTML/CSS</p>
+    </div>
+  </section>
+
+  <section class="workHistory">
+      <table class="workHistoryTable">
+        <tr class="blue">
+          <th class="col1">Years</th>
+          <th class="col2">Company</th>
+          <th class="col3">Title</th>
+        </tr>
+        <tr class="mainColor">
+          <td class="col1">4</td>
+          <td class="col2">MDToolbox</td>
+          <td class="col3">Intergration Sales Specialist</td>
+        </tr>
+        <tr class="blue">
+          <td class="col1">2</td>
+          <td class="col2">Trios Health</Td>
+          <td class="col3">HPF/Paragon Application Analyst</td>
+        </tr>
+        <tr class="mainColor">
+          <td class="col1">3</td>
+          <td class="col2">Leidos</td>
+          <td class="col3">Senior Consultant</td>
+        </tr>
+        <tr class="blue">
+          <td class="col1">5</td>
+          <td class="col2">Kadlec Regional Medical Center</td>
+          <td class="col3">HIM Systems Analyst</td>
+        </tr>
+        <tr class="mainColor"> 
+          <td class="col1">5</td>
+          <td class="col2">Walla Walla VA Medical Center</td>
+          <td class="col3">Clinical Applications Coordinator</td>
+        </tr>
+      </table>
+  </section>
+
+  <footer class=contactInfo>
+    <button type="button">Contact Me!</button>
+  </footer>
+
+
+
+  
 </body>
 </html>

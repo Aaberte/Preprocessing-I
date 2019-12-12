@@ -48,12 +48,165 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Acme|Righteous&display=swap');
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+//variables
+@mainFont: 'Righteous', cursive;
+@titleFont: 'Acme', sans-serif;
+@mainColor: darkblue;
+@altColor: skyblue;
+@altTextColor: white;
 
-html, body {
-    height: 100%;
+
+//mixins
+.centerFlex {
+	display:flex;
+	align-items: center;
+}
+.h3About {
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 4%;
+	color: @mainColor;
+	font-family: @titleFont;
+}
+.pStyle {
+	text-align:center;
+	padding: 4%;
+	font-size: 1.5rem;
+}
+//codes starts here
+body {
+	width: 80%;
+	margin: 0% auto;	
+	font-size: 62.5%;
+	font-family: @mainFont;
+}//closes body tag
+
+nav {
+	.centerFlex();
+	height: 5vh;	
+	.logo {
+		width: 10%;
+		height: 100%;
+		text-align:center;	
+		padding-top: 1%;
+		color: @mainColor;
+	}//closese nav logo tag
+	.links {
+		width: 90%;
+		height: 100%;
+		.centerFlex();
+		justify-content: space-evenly;
+		a {
+			text-decoration: none;
+			color: @mainColor;
+		}//closes nav anchor tag
+	}//closes nav links tag	
+}//closes nav tag	
+
+header {	
+	background-color: @altColor;
+	height: 40rem;
+	.centerFlex();
+	flex-direction: column;	
+	h1 {		
+		font-size: 4rem;
+		height: 10rem;
+		text-align: center;		
+		padding-top: 3%;
+		color: @altTextColor;	
+	}//closes  header h1 tag
+	h3 {		
+		font-size: 3rem;
+		height: 10rem;
+		padding-top: 3%;
+		margin: auto;
+		text-align: center;
+		color: @altTextColor;
+	}//closes header h3 tag
+	p {		
+		font-size: 1.3rem;
+		height: 10rem;
+		padding-top: 3%;
+		text-align: center;
+		color: @altTextColor;
+	}//closes header p tag
+}//closes header tag
+
+ .about {
+	border: 10px dotted @altColor;
+	.centerFlex();
+	justify-content: space-between;
+	height: 20rem;
+	.aboutIntro {
+		height: 20rem;
+		width: 49%;
+		height: 20rem;
+		h3 {
+			.h3About();
+			height: 5rem;
+		}//closes intro h3 tag
+		p {
+			color: @mainColor;
+			height: 15rem;
+			.pStyle();
+		}//closes intro h3 tag
+	}//closes aboutIntro tag
+	.aboutSkills {
+		.centerFlex();
+		flex-direction: column;
+		width: 49%;
+		height: 20rem;
+		h3 {
+			.h3About();
+			height: 5rem;
+			width:100%;		
+		}//closes skills h3 tag
+		p {
+			color:@mainColor;
+			width:100%;
+			height: 18%;
+			.pStyle();
+		}//closes skills p tag
+	}//closes aboutSkills tag	
+}//closes about section tag 
+
+.workHistory {
+	height: 40vh;
+	.workHistoryTable  {
+		width:100%;
+		height: 100%;
+		.mainColor {
+			color: @mainColor;
+		}//closes main color tag
+		.blue {
+			background-color: @altColor;
+			color: @altTextColor;
+	}//closes workHistoryTable tag
+		}//closes blue tag			
+}//closes workHistory tag
+
+.col1 {
+	width: 10%;
+	text-align: center;
+	font-size: 1.5rem;
+	padding-top: 2%;
+}//closes col1 tag	
+.col2, .col3 {
+	width: 48%;
+	text-align: center;
+	font-size: 1.3rem;
+	padding-top: 2%;
+}//closes col2 and col3 tag
+
+.contactInfo {
+	background-color: @altColor;
+	height: 10vh;
+	text-align: center;
+	padding-top: 4%;
 }
 

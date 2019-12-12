@@ -126,6 +126,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Acme Regular'), local('Acme-Regular'), url(https://fonts.gstatic.com/s/acme/v9/RrQfboBx-C5_XxrBaw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -139,6 +153,7 @@ table {
   font-size: 3rem;
   padding-top: 4%;
   color: darkblue;
+  font-family: 'Acme', sans-serif;
 }
 .pStyle {
   text-align: center;
@@ -149,6 +164,7 @@ body {
   width: 80%;
   margin: 0% auto;
   font-size: 62.5%;
+  font-family: 'Righteous', cursive;
 }
 nav {
   display: flex;
@@ -218,6 +234,7 @@ header p {
   font-size: 3rem;
   padding-top: 4%;
   color: darkblue;
+  font-family: 'Acme', sans-serif;
   height: 5rem;
 }
 .about .aboutIntro p {
@@ -239,6 +256,7 @@ header p {
   font-size: 3rem;
   padding-top: 4%;
   color: darkblue;
+  font-family: 'Acme', sans-serif;
   height: 5rem;
   width: 100%;
 }

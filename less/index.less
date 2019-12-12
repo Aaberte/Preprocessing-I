@@ -48,12 +48,14 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Acme|Righteous&display=swap');
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
 }
 //variables
-
+@mainFont: 'Righteous', cursive;
+@titleFont: 'Acme', sans-serif;
 @mainColor: darkblue;
 @altColor: skyblue;
 @altTextColor: white;
@@ -69,6 +71,7 @@ table {
 	font-size: 3rem;
 	padding-top: 4%;
 	color: @mainColor;
+	font-family: @titleFont;
 }
 .pStyle {
 	text-align:center;
@@ -80,6 +83,7 @@ body {
 	width: 80%;
 	margin: 0% auto;	
 	font-size: 62.5%;
+	font-family: @mainFont;
 }//closes body tag
 
 nav {
@@ -182,19 +186,20 @@ header {
 		.blue {
 			background-color: @altColor;
 			color: @altTextColor;
-			.col1 {
-				width: 10%;
-				text-align: center;
-				font-size: 1.5rem;
-				padding-top: 2%;
-			}//closes col1 tag	
-			.col2, .col3 {
-				width: 48%;
-				text-align: center;
-				font-size: 1.3rem;
-				padding-top: 2%;
-			}//closes col2 and col3 tag
 	}//closes workHistoryTable tag
 		}//closes blue tag			
 }//closes workHistory tag
+
+.col1 {
+	width: 10%;
+	text-align: center;
+	font-size: 1.5rem;
+	padding-top: 2%;
+}//closes col1 tag	
+.col2, .col3 {
+	width: 48%;
+	text-align: center;
+	font-size: 1.3rem;
+	padding-top: 2%;
+}//closes col2 and col3 tag
 
